@@ -263,14 +263,69 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     ),
                     Container(
                       width: double.infinity,
-                      height: 450.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).lineColor,
                       ),
-                      child: ListView(
-                        padding: EdgeInsets.zero,
-                        scrollDirection: Axis.horizontal,
+                      child: Wrap(
+                        spacing: 0.0,
+                        runSpacing: 0.0,
+                        alignment: WrapAlignment.start,
+                        crossAxisAlignment: WrapCrossAlignment.start,
+                        direction: Axis.horizontal,
+                        runAlignment: WrapAlignment.start,
+                        verticalDirection: VerticalDirection.down,
+                        clipBehavior: Clip.none,
                         children: [
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                25.0, 25.0, 25.0, 25.0),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Image.network(
+                                  'https://picsum.photos/seed/783/600',
+                                  width: 400.0,
+                                  height: 300.0,
+                                  fit: BoxFit.cover,
+                                ),
+                                Text(
+                                  'Hello World',
+                                  style: FlutterFlowTheme.of(context).bodyText1,
+                                ),
+                                Text(
+                                  'Hello World',
+                                  style: FlutterFlowTheme.of(context).bodyText1,
+                                ),
+                                FFButtonWidget(
+                                  onPressed: () {
+                                    print('Button pressed ...');
+                                  },
+                                  text: 'Button',
+                                  options: FFButtonOptions(
+                                    width: 130.0,
+                                    height: 40.0,
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 0.0, 0.0, 0.0),
+                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 0.0, 0.0, 0.0),
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryColor,
+                                    textStyle: FlutterFlowTheme.of(context)
+                                        .subtitle2
+                                        .override(
+                                          fontFamily: 'Poppins',
+                                          color: Colors.white,
+                                        ),
+                                    borderSide: BorderSide(
+                                      color: Colors.transparent,
+                                      width: 1.0,
+                                    ),
+                                    borderRadius: BorderRadius.circular(8.0),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                           Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 25.0, 25.0, 25.0, 25.0),
@@ -329,72 +384,77 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                       child: Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(
                             20.0, 20.0, 20.0, 20.0),
-                        child: SingleChildScrollView(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Text(
-                                'See what others are saying',
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyText1
-                                    .override(
-                                      fontFamily: 'Poppins',
-                                      fontSize: 30.0,
-                                      fontWeight: FontWeight.w800,
-                                    ),
-                              ),
-                              Align(
-                                alignment: AlignmentDirectional(0.05, 0.0),
-                                child: Container(
-                                  width: double.infinity,
-                                  height: 400.0,
-                                  decoration: BoxDecoration(
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
+                        child: Column(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Text(
+                              'See what others are saying',
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyText1
+                                  .override(
+                                    fontFamily: 'Poppins',
+                                    fontSize: 30.0,
+                                    fontWeight: FontWeight.w800,
                                   ),
-                                  alignment: AlignmentDirectional(0.0, 0.0),
-                                  child: Align(
-                                    alignment: AlignmentDirectional(-1.0, 0.0),
-                                    child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          30.0, 0.0, 30.0, 30.0),
-                                      child: GridView(
-                                        padding: EdgeInsets.zero,
-                                        gridDelegate:
-                                            SliverGridDelegateWithFixedCrossAxisCount(
-                                          crossAxisCount: 3,
-                                          crossAxisSpacing: 10.0,
-                                          mainAxisSpacing: 10.0,
-                                          childAspectRatio: 1.0,
+                            ),
+                            Container(
+                              width: double.infinity,
+                              decoration: BoxDecoration(
+                                color: FlutterFlowTheme.of(context).lineColor,
+                              ),
+                              child: Align(
+                                alignment: AlignmentDirectional(-1.0, 0.0),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      30.0, 0.0, 30.0, 30.0),
+                                  child: Wrap(
+                                    spacing: 0.0,
+                                    runSpacing: 0.0,
+                                    alignment: WrapAlignment.center,
+                                    crossAxisAlignment:
+                                        WrapCrossAlignment.start,
+                                    direction: Axis.horizontal,
+                                    runAlignment: WrapAlignment.start,
+                                    verticalDirection: VerticalDirection.down,
+                                    clipBehavior: Clip.none,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            10.0, 10.0, 10.0, 10.0),
+                                        child: Image.asset(
+                                          'assets/images/T1-1.png',
+                                          width: 400.0,
+                                          height: 400.0,
+                                          fit: BoxFit.contain,
                                         ),
-                                        shrinkWrap: true,
-                                        scrollDirection: Axis.horizontal,
-                                        children: [
-                                          Image.asset(
-                                            'assets/images/T1-1.png',
-                                            width: 200.0,
-                                            height: 200.0,
-                                            fit: BoxFit.contain,
-                                          ),
-                                          Image.asset(
-                                            'assets/images/T2.png',
-                                            width: 100.0,
-                                            height: 50.0,
-                                            fit: BoxFit.contain,
-                                          ),
-                                          Image.asset(
-                                            'assets/images/T3.png',
-                                            width: 100.0,
-                                            fit: BoxFit.contain,
-                                          ),
-                                        ],
                                       ),
-                                    ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            10.0, 10.0, 10.0, 10.0),
+                                        child: Image.asset(
+                                          'assets/images/T2.png',
+                                          width: 400.0,
+                                          height: 400.0,
+                                          fit: BoxFit.contain,
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            10.0, 10.0, 10.0, 10.0),
+                                        child: Image.asset(
+                                          'assets/images/T3.png',
+                                          width: 400.0,
+                                          height: 400.0,
+                                          fit: BoxFit.contain,
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
