@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "99045988146",
+    "firebase_url": "https://poojabhaumik-website-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "poojabhaumik-website",
+    "storage_bucket": "poojabhaumik-website.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99045988146:android:095e84ea79f64e12b6a92b",
+        "android_client_info": {
+          "package_name": "com.poojabhaumik.website"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "99045988146-tbp85vlriirrahj0404619g2o9g4cd6s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.poojabhaumik.website",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "99045988146-jktdnk9ileaednucmpfdrubki7vufajq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYnwApLAoZI__is-USFp0Xra03tGC_XLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "99045988146-jktdnk9ileaednucmpfdrubki7vufajq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "99045988146-0co81sjpgjivr4t7gb2oc58s06ihevil.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.poojabhaumik.website"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
